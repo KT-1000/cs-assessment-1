@@ -1,0 +1,66 @@
+Runtime
+
+1. When calculating the Big O notation for a particular algorithm, it’s necessary to consider the length of time it takes for the algorithm to run as the algorithm’s workload approaches the size of infinity. What is the workload of a function that takes in a list of integers and returns a new list of the even integers?
+
+linear
+
+2. Order the following runtimes in ascending order by efficiency as n approaches infinity:
+O(2n)
+O(n2)
+O(n log n)
+O(n)
+O(log n)
+O(1)
+
+Stacks and Queues
+
+In the following cases, would a stack or queue be an appropriate data structure?
+
+The process of loading and unloading pallets onto a flatbed truck - stack
+
+Putting bottle caps on bottles of beer as they roll down an assembly line - queue
+
+Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2) - stack
+
+Describe 2 more examples of when a queue would be an appropriate data structure.
+    1. video streaming
+    2. the line at starbucks
+
+Describe 2 more examples of when a stack would be an appropriate data structure.
+    1. reversing a string
+    2. browser back button
+
+Linked Lists
+
+Given the below linked list, 
+which are the nodes? Nodes are comprised of data and a pointer, so Apple, Berry and Cherry plus their respective next pointers are all nodes.
+What is the data for each node? Apple, Berry, Cherry
+Where is the head?  The node with Apple data is the head
+Where is the tail? The node with Cherry data is the tail
+What’s the difference between a doubly and singly linked list?  A singly linked list has next pointers, while a doubly linked list has both next and previous pointers.
+Why is it faster to append to a linked list if we keep track of the tail as an attribute? Keeping track of the tail enables us to easily point to the new node from the old tail and make the new node the new tail.
+
+Trees
+
+Given the above tree, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burrito (starting at food)? 
+[food]
+[Italian, Indian, Mexican]
+[Indian, Mexican, lasagna, pizza]
+[Mexican, lasagna, pizza, tikka masala, saag]
+[lasagna, pizza, tikka masala, saag, burrito, tacos, enchiladas]
+[pizza, tikka masala, saag, burrito, tacos, enchiladas]
+[tikka masala, saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+[saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+[burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+burrito was found
+
+Given the above tree, in what order would a Depth First Search algorithm visit each node until finding Chicago-style (starting at food)?
+[food]
+[Italian, Indian, Mexican]
+[Italian, Indian, burrito, tacos, enchiladas]
+[Italian, Indian, burrito, tacos]
+[Italian, Indian, burrito]
+burrito was found
+
+How is a binary search tree different from other trees?
+Each node has a left and right child, and has a "rule" for arrangement (such as numbers less than on the left and greater than to the right).
